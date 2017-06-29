@@ -29,10 +29,10 @@ var queueMethods = {
   ,
   dequeue : function() {
     if (this.sizer > 1) {
-      this.sizer--
+      this.sizer--;
       var dequeued = this.storage[this.firstKey];
       delete this.storage[this.firstKey];
-      this.firstKey++
+      this.firstKey++;
       return dequeued;
     }
     else if (this.sizer === 1) {
