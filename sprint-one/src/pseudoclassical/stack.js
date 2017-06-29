@@ -21,4 +21,8 @@ Stack.prototype.size = function(){
   return this.sizeOf;
 };
 
+Stack.prototype.log = function(key){
+  return this.storage[this.key];
+};
+
 
