@@ -9,10 +9,11 @@ var Tree = function(value) {
 };
 
 var treeMethods = {};
-
+//complexity: O(n)
 treeMethods.addChild = function(value) {
+  
 };
-
+//complexity: O(n)
 treeMethods.contains = function(target) {
 };
 
