@@ -28,4 +28,4 @@ stackMethods.size = function() {
 
 stackMethods.log = function(key) {
   return this.storage[this[key]];
-}
+};

@@ -27,7 +27,7 @@ var Stack = function() {
 
   someInstance.log = function(key) {
     return storage[key];
-  }
+  };
 
   return someInstance;
 };

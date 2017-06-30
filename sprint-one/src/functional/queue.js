@@ -11,7 +11,7 @@ var Queue = function() {
 
   someInstance.enqueue = function(value) {
     if(size === 0) {
-      size++
+      size++;
       firstKey++;
       lastKey++;
       storage[firstKey] = value;
@@ -25,14 +25,14 @@ var Queue = function() {
 
   someInstance.dequeue = function() {
     if (size > 1) {
-      size--
+      size--;
       var dequeued = storage[firstKey];
       delete storage[firstKey];
-      firstKey++
+      firstKey++;
       return dequeued;
     }
     else if (size === 1) {
-      size--
+      size--;
       var dequeued = storage[lastKey];
       delete storage[lastKey];
       firstKey = 0;
@@ -47,11 +47,11 @@ var Queue = function() {
   
   someInstance.log = function(key) {
     return storage[key];
-  }
+  };
 
   return someInstance;
 };
 
-var random = Queue()
+var random = Queue();
 
 

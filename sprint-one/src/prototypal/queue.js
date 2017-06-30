@@ -47,4 +47,4 @@ queueMethods.size = function(){
 
 queueMethods.log = function(key) {
   return this.storage[this[key]];
-}
+};

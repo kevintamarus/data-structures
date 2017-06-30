@@ -19,7 +19,7 @@ var queueMethods = {};
 
 queueMethods.enqueue = function(value) {
   if(this.sizer === 0) {
-    this.sizer++
+    this.sizer++;
     this.firstKey++;
     this.lastKey++;
     this.storage[this.firstKey] = value;
@@ -40,7 +40,7 @@ queueMethods.dequeue = function() {
     return dequeued;
   }
   else if (this.sizer === 1) {
-    this.sizer--
+    this.sizer--;
     var dequeued = this.storage[this.lastKey];
     delete this.storage[this.lastKey];
     this.firstKey = 0;

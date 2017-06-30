@@ -22,7 +22,7 @@ Stack.prototype.size = function(){
 };
 
 Stack.prototype.log = function(key){
-  return this.storage[this.key];
+  return this.storage[this[key]];
 };
 
 
