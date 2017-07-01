@@ -40,5 +40,22 @@ describe('tree', function() {
     expect(tree.contains(7)).to.equal(true);
     expect(tree.contains(8)).to.equal(true);
   });
+  
+//extra test
+  it('should return false if a child is not nested', function() {
+    tree.addChild(5);
+    tree.addChild(6);
+    tree.children[0].addChild(7);
+    tree.children[1].addChild(8);
+    expect(tree.contains(1)).to.equal(false);
+    expect(tree.contains(2)).to.equal(false);
+  });
+
+//extra test
+  it('should remove a child from the tree', function() {
+    tree.addChild(5);
+    tree.remove(5);
+    expect(tree.contains(5)).to.equal(false);
+  });
 
 });

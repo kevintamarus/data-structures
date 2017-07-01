@@ -34,3 +34,21 @@ treeMethods.contains = function(target) {
 	search(this);
 	return result;
 };
+
+//complexity:(n)
+//extra function not working, need to debug
+treeMethods.remove = function(element) {
+	var search = function(node){
+		if(node.value === element){
+			var removed = node.value;
+			delete node.value;
+		}
+		var i = 0;
+    while(node.children.length !== i) {
+			search(node.children[i]);
+      i++;
+		}
+	}
+	search(this);
+	return removed;
+};
