@@ -50,6 +50,12 @@ describe('linkedList', function() {
     linkedList.removeHead();
     expect(linkedList.contains(4)).to.equal(false);
   });
+//extra test
+  it('should return the order index of the linkedlist', function() {
+    linkedList.addToTail(6);
+    linkedList.addToTail(7);
+    expect(linkedList.order(7)).to.equal(2);
+  });
 
   // add more tests here to test the functionality of linkedList
 });

@@ -34,6 +34,21 @@ var LinkedList = function() {
     }
     return result;
   };
+//fun function for an extra test
+//complexity: 0(n)
+  list.order = function(element) {
+    var node = this.head;
+    var count = 0;
+    var button = 'on';
+    while (button = 'on') {
+      count++;
+      if (node.value === element) {
+        button = 'off';
+        return count;
+      }
+      node = node.next;
+    }
+  }
   
   return list;
 };

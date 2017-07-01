@@ -50,12 +50,5 @@ describe('tree', function() {
     expect(tree.contains(1)).to.equal(false);
     expect(tree.contains(2)).to.equal(false);
   });
-
-//extra test
-  it('should remove a child from the tree', function() {
-    tree.addChild(5);
-    tree.remove(5);
-    expect(tree.contains(5)).to.equal(false);
-  });
-
+  
 });
