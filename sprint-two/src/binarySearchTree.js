@@ -62,3 +62,21 @@ BinarySearchTree.prototype.depthFirstLog = function(cb) {
     this.right.depthFirstLog(cb);
   }
 };
+
+//extra function
+//complexity: O(log)
+BinarySearchTree.prototype.remove = function(value) {
+  //base case
+  if(value === this.value) {
+    var removed = this.value;
+    this.value = null;
+    return removed;
+  } 
+  //edge cases
+  if (value < this.value) {
+    return this.left.remove(value);
+  }
+  if (value > this.value) {
+    return this.right.remove(value);
+  }
+};
