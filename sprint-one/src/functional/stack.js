@@ -25,10 +25,6 @@ var Stack = function() {
     return size;
   };
 
-  someInstance.log = function(key) {
-    return storage[key];
-  };
-
   return someInstance;
 };
 

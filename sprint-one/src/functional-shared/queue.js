@@ -52,7 +52,3 @@ queueMethods.dequeue = function() {
 queueMethods.size = function() {
   return this.sizer;
 };
-
-queueMethods.log = function(key){
-  return this.storage[this[key]];
-};

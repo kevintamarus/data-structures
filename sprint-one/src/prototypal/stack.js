@@ -25,7 +25,3 @@ stackMethods.pop = function() {
 stackMethods.size = function() {
   return this.sizeOf;
 };
-
-stackMethods.log = function(key) {
-  return this.storage[this[key]];
-};

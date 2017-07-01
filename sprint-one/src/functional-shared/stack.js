@@ -33,7 +33,3 @@ return popped;
 stackMethods.size = function(){
 return this.sizer;
 };
-
-stackMethods.log = function(key){
-return this.storage[this[key]];
-};

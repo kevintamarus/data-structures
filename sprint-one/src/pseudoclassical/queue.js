@@ -40,7 +40,3 @@ Queue.prototype.dequeue = function(){
 Queue.prototype.size = function(){
   return this.sizeOf;
 };
-
-Queue.prototype.log = function(key){
-  return this.storage[this[key]];
-};
