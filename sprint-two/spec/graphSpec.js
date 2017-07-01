@@ -26,7 +26,7 @@ describe('graph', function() {
     graph.removeNode(2);
     expect(graph.contains(2)).to.equal(false);
   });
-//
+//extra test
   it('should check if two nodes are connected', function() {
     graph.addNode(2);
     graph.addNode(4);
@@ -35,7 +35,7 @@ describe('graph', function() {
     expect(graph.hasEdge(2, 4)).to.equal(true);
     expect(graph.hasEdge(3, 4)).to.equal(false);
   });
-//
+
   it('should create edges between two nodes', function() {
     graph.addNode(2);
     graph.addNode(1);
@@ -78,3 +78,5 @@ describe('graph', function() {
     expect(graph.hasEdge(5, 5)).to.equal(true);
   });
 });
+
+
