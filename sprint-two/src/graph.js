@@ -54,3 +54,7 @@ Graph.prototype.forEachNode = function(cb) {
   }
 };
 
+Graph.prototype.checkEdges = function(node) {
+  return Object.keys(this.storage[node]).length;
+}
+
