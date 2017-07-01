@@ -8,7 +8,7 @@ var Tree = function(value) {
 
 var treeMethods = {};
 
-//complexity: O(n)
+//complexity: O(1)
 treeMethods.addChild = function(value) {
 	var child = Tree(value);
 	this.children.push(child);
